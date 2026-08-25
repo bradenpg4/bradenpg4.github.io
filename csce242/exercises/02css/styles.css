@@ -1,0 +1,33 @@
+/* Structural */
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    background:url(images/bluenight-bg.jpg);
+    background-size: cover;
+}
+
+#content {
+background-color: rgba(255, 255, 255, 0.8);
+width: 70%;
+margin:auto; /* center in the page */
+border-radius:5px;
+border: 1px solid darkblue;
+box-shadow: 10px 10px 5px lightblue;
+}
+
+header, main, footer{
+    padding: 1%;
+} 
+    
+
+header, footer {
+    background-color: darkblue;
+    color: white;
+}
+
+/* Navigation */
+
+
+/* Typography */
+h1 {
+    color: darkblue;
+}
