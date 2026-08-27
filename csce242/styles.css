@@ -31,12 +31,14 @@ body {
     color: #94DCE0;
 }
 
+#repo-link,
 #repo-link a {
     color: #F1F1F1;
     font-weight: bold;
     text-decoration: none;
 }
 
+#repo-link:hover,
 #repo-link a:hover {
     color: #94DCE0;
     text-decoration: underline;
