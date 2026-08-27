@@ -1,0 +1,79 @@
+body {
+    font-family: "Trebuchet MS", Arial, sans-serif;
+    background-image: url("images/bikinibottom.jpg");
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    color: #123b5d;
+    margin: 0;
+}
+
+#content {
+    background-color: rgba(255, 255, 255, 0.8);
+    width: 85%;
+    margin: 5% auto;
+    padding: 3%;
+    border-radius: 2%;
+}
+
+header {
+    background-color: #ffd83d;
+    text-align: center;
+    padding: 3%;
+    border-radius: 2%;
+}
+
+header h1 {
+    color: #123b5d;
+    margin: 0;
+}
+
+main h2 {
+    color: #006d9c;
+}
+
+main p {
+    line-height: 1.6;
+}
+
+main img {
+    width: 42%;
+    height: auto;
+    margin: 2%;
+    padding: 1%;
+    background-color: rgba(255, 255, 255, 0.8);
+    border: 4px solid #ffd83d;
+    border-radius: 5%;
+    box-shadow: 0 4px 8px #006d9c;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 2%;
+}
+
+th {
+    background-color: #ffd83d;
+    color: #123b5d;
+}
+
+th,
+td {
+    border: 2px solid #00a9d6;
+    padding: 1%;
+    text-align: left;
+}
+
+tr:nth-child(even) {
+    background-color: #e8f8ff;
+}
+
+footer {
+    text-align: center;
+    color: #ffffff;
+    background-color: #006d9c;
+    padding: 1%;
+    margin-top: 3%;
+    border-radius: 2%;
+}
