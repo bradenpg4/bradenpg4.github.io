@@ -1,27 +1,129 @@
 <!DOCTYPE html>
-<html>
-    <head>
-        <title>CSCE 242 Portfolio Page</title>
-        <link rel="stylesheet" href="styles.css"/>
-    </head>
-    <body>
-        <div id ="content">
-            <header id ="main-header">
-                <h1>CSCE 242 Portfolio Page</h1>
-                <h2>Braden Green</h2>
-                <p>In this class, we will use HTML and CSS to design a website. We will also use JavaScript to add functionality to the website.</p>
-                <a id ="repo-link" href="https://github.com/bradenpg4/bradenpg4.github.io">GitHub Repository</a>
-            </header>
-            <main id ="main-content">
+
+<head>
+    <title>CSCE 242 Portfolio Page</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <div id="content">
+
+        <header id="main-header">
+            <h1>CSCE 242: Client-Server Computing</h1>
+            <h2>Braden Green</h2>
+
+            <p>
+                In this class, we will use HTML and CSS to design a website.
+                We will also use JavaScript to add functionality to the website.
+            </p>
+
+            <a id="repo-link"
+               href="https://github.com/bradenpg4/bradenpg4.github.io">
+                GitHub Repository
+            </a>
+        </header>
+
+        <main id="main-content">
+
+            <section id="assignments">
                 <h2>Assignments</h2>
-                <ol>
-                    <li><a href="assignments/01html/index.html">HTML Introduction</a></li>
-                    <li><a href="assignments/02html/index.html">Basic CSS</a></li>
-                </ol>
-            </main
-            <footer>
-                <p>&copy; bradengreen</p>
-            </footer>
-        </div>
-    </body>
+
+                <div class="assignment-container">
+
+                    <article class="assignment">
+                        <h3>
+                            <a href="assignments/01html/index.html">
+                                Assignment 1 - Basic HTML
+                            </a>
+                        </h3>
+
+                        <a href="assignments/01html/index.html">
+                            <img src="images/assignment1.png"
+                                 alt="Screenshot of Basic HTML assignment">
+                        </a>
+
+                        <p>
+                            This assignment introduced the basic structure of
+                            HTML webpages and gave me practice using headings,
+                            paragraphs, links, and other HTML elements.
+                        </p>
+                    </article>
+
+                    <article class="assignment">
+                        <h3>
+                            <a href="assignments/02html/index.html">
+                                Assignment 2 - Basic CSS
+                            </a>
+                        </h3>
+
+                        <a href="assignments/02html/index.html">
+                            <img src="images/assignment2.png"
+                                 alt="Screenshot of Basic CSS assignment">
+                        </a>
+
+                        <p>
+                            This assignment focused on using CSS to style a
+                            webpage with different colors, fonts, spacing,
+                            and other visual properties.
+                        </p>
+                    </article>
+
+                    <article class="assignment">
+                        <h3>
+                            <a href="assignments/03html/index.html">
+                                Assignment 3 - Page Layout
+                            </a>
+                        </h3>
+
+                        <a href="assignments/03html/index.html">
+                            <img src="images/page-layout.png"
+                                 alt="Screenshot of Page Layout assignment">
+                        </a>
+
+                        <p>
+                            This assignment focused on creating a webpage
+                            layout and organizing content so that the page
+                            works well across different screen sizes.
+                        </p>
+                    </article>
+
+                </div>
+            </section>
+
+            <section id="projects">
+                <h2>Projects</h2>
+
+                <div class="project-container">
+
+                    <article class="project">
+                        <h3>
+                            <a href="projects/topic.pdf">
+                                Topic
+                            </a>
+                        </h3>
+
+                        <a href="projects/topic.pdf">
+                            <img src="images/topic.png"
+                                 alt="Screenshot of topic project">
+                        </a>
+
+                        <p>
+                            This project presents the topic I selected for
+                            my website and describes the direction of the
+                            project.
+                        </p>
+                    </article>
+
+                </div>
+            </section>
+
+        </main>
+
+        <footer>
+            <p>&copy; bradengreen</p>
+        </footer>
+
+    </div>
+</body>
+
 </html>
