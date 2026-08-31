@@ -1,0 +1,193 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #f3f3ef;
+    margin: 0;
+}
+
+#content {
+    width: 80%;
+    max-width: 1200px;
+    margin: 0 auto;
+    background-color: #f5f1d7;
+}
+
+#main-header {
+    background-color: #f5f1d7;
+}
+
+#main-header h1 {
+    color: #5f8d95;
+    text-align: center;
+    font-size: 3.3em;
+    margin: 0;
+    padding: 35px 10px;
+}
+
+/* Navigation */
+
+#main-nav ul,
+#sidebar ul {
+    list-style-type: none;
+    padding-left: 0;
+    margin: 0;
+}
+
+#main-nav li {
+    background-color: #d98184;
+    padding: 13px;
+    border-bottom: 2px solid #a9c2be;
+    text-align: center;
+}
+
+#main-nav a {
+    color: white;
+    font-size: 1.2em;
+    text-decoration: none;
+}
+
+/* Sidebar */
+
+#sidebar {
+    background-color: #e4afb1;
+    color: #5f8d95;
+    padding: 25px 6px 35px;
+}
+
+#sidebar h2 {
+    text-align: center;
+    margin-top: 0;
+}
+
+#sidebar li {
+    background-color: white;
+    padding: 5px;
+    margin-bottom: 2px;
+    text-align: center;
+}
+
+#sidebar a {
+    color: #d98184;
+    text-decoration: none;
+}
+
+/* Top cards */
+
+#info {
+    background-color: #f5f1d7;
+    padding: 9px;
+}
+
+.top-card {
+    margin-bottom: 9px;
+}
+
+.top-card h2 {
+    background-color: #5f8d95;
+    color: white;
+    text-align: center;
+    font-size: 1.2em;
+    padding: 8px;
+    margin: 0;
+}
+
+.top-card img {
+    width: 100%;
+}
+
+/* Ideas */
+
+.idea {
+    background-color: #5f8d95;
+    color: white;
+    border-top: 9px solid #f5f1d7;
+}
+
+.idea img {
+    width: 100%;
+}
+
+.idea-text {
+    padding: 12px;
+}
+
+.idea-text h2 {
+    margin-top: 0;
+}
+
+.idea-text p {
+    line-height: 1.35;
+}
+
+/* Footer */
+
+footer {
+    background-color: #d98184;
+    color: white;
+    text-align: center;
+    padding: 42px;
+    margin-top: 9px;
+}
+
+/* Desktop layout */
+
+@media (min-width: 1000px) {
+    .columns {
+        display: flex;
+    }
+
+    #main-nav ul {
+        display: flex;
+    }
+
+    #main-nav li {
+        flex: 1;
+        border-bottom: 0;
+        border-right: 2px solid #a9c2be;
+    }
+
+    #main-nav li:last-child {
+        border-right: 0;
+    }
+
+    .one {
+        flex: 1;
+    }
+
+    .two {
+        flex: 2;
+    }
+
+    .three {
+        flex: 3;
+    }
+
+    .four {
+        flex: 4;
+    }
+
+    .five {
+        flex: 5;
+    }
+
+    .six {
+        flex: 6;
+    }
+
+    #sidebar {
+        margin-right: 9px;
+    }
+
+    #info {
+        gap: 9px;
+    }
+
+    .top-card {
+        margin-bottom: 0;
+    }
+
+    .idea img {
+        width: 18%;
+        max-width: 198px;
+        object-fit: cover;
+    }
+}
