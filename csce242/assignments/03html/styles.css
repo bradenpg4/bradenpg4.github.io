@@ -1,6 +1,6 @@
 body {
     font-family: Arial, Helvetica, sans-serif;
-    background-color: #f3f3ef;
+    background-color: #f1f1ed;
     margin: 0;
 }
 
@@ -8,15 +8,15 @@ body {
     width: 80%;
     max-width: 1200px;
     margin: 0 auto;
-    background-color: #f5f1d7;
+    background-color: #f4f1d5;
 }
 
 #main-header {
-    background-color: #f5f1d7;
+    background-color: #f4f1d5;
 }
 
 #main-header h1 {
-    color: #5f8d95;
+    color: #608d95;
     text-align: center;
     font-size: 3.3em;
     margin: 0;
@@ -26,15 +26,15 @@ body {
 /* Navigation */
 
 #main-nav ul,
-#sidebar ul {
+#quick-links {
     list-style-type: none;
     padding-left: 0;
     margin: 0;
 }
 
 #main-nav li {
-    background-color: #d98184;
-    padding: 13px;
+    background-color: #d98386;
+    padding: 14px;
     border-bottom: 2px solid #a9c2be;
     text-align: center;
 }
@@ -48,8 +48,8 @@ body {
 /* Sidebar */
 
 #sidebar {
-    background-color: #e4afb1;
-    color: #5f8d95;
+    background-color: #e6b0b2;
+    color: #608d95;
     padding: 25px 6px 35px;
 }
 
@@ -58,22 +58,29 @@ body {
     margin-top: 0;
 }
 
-#sidebar li {
+#quick-links li {
     background-color: white;
     padding: 5px;
     margin-bottom: 2px;
     text-align: center;
 }
 
-#sidebar a {
-    color: #d98184;
+#quick-links a {
+    color: #d98386;
     text-decoration: none;
+}
+
+/* Images */
+
+img {
+    display: block;
+    max-width: 100%;
 }
 
 /* Top cards */
 
 #info {
-    background-color: #f5f1d7;
+    background-color: #f4f1d5;
     padding: 9px;
 }
 
@@ -82,7 +89,7 @@ body {
 }
 
 .top-card h2 {
-    background-color: #5f8d95;
+    background-color: #608d95;
     color: white;
     text-align: center;
     font-size: 1.2em;
@@ -90,16 +97,12 @@ body {
     margin: 0;
 }
 
-.top-card img {
-    width: 100%;
-}
-
 /* Ideas */
 
 .idea {
-    background-color: #5f8d95;
+    background-color: #608d95;
     color: white;
-    border-top: 9px solid #f5f1d7;
+    border-top: 9px solid #f4f1d5;
 }
 
 .idea img {
@@ -107,7 +110,7 @@ body {
 }
 
 .idea-text {
-    padding: 12px;
+    padding: 15px 22px;
 }
 
 .idea-text h2 {
@@ -121,11 +124,15 @@ body {
 /* Footer */
 
 footer {
-    background-color: #d98184;
+    background-color: #d98386;
     color: white;
     text-align: center;
-    padding: 42px;
+    padding: 35px;
     margin-top: 9px;
+}
+
+footer p {
+    margin: 0;
 }
 
 /* Desktop layout */
@@ -186,8 +193,13 @@ footer {
     }
 
     .idea img {
-        width: 18%;
-        max-width: 198px;
+        flex: 1;
+        width: auto;
+        max-width: 200px;
         object-fit: cover;
+    }
+
+    .idea-text {
+        flex: 4;
     }
 }
