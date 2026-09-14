@@ -1,0 +1,167 @@
+/* Structure */
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #dbeafe;
+    color: #1e3a5f;
+    margin: 0;
+}
+
+#content {
+    background-color: #f8fafc;
+    width: 90%;
+    max-width: 1200px;
+    margin: 40px auto;
+    padding: 30px;
+    border-radius: 12px;
+    box-sizing: border-box;
+}
+
+/* Header */
+#main-header {
+    text-align: center;
+}
+
+#main-header h1 {
+    color: #1d4f91;
+    margin-bottom: 8px;
+}
+
+#main-header h2 {
+    color: #c2410c;
+    margin-top: 0;
+}
+
+/* Three-column layout */
+#columns {
+    display: flex;
+    gap: 25px;
+    margin-top: 30px;
+}
+
+.column {
+    background-color: #fff7d6;
+    border: 2px solid #93c5fd;
+    box-sizing: border-box;
+    flex: 1;
+    min-height: 310px;
+    padding: 25px;
+    text-align: center;
+}
+
+.column h3 {
+    color: #1d4f91;
+    font-size: 1.5em;
+    margin-top: 0;
+}
+
+/* Speech */
+#speech-column {
+    cursor: pointer;
+}
+
+#speech-bubble {
+    background-color: white;
+    border: 3px solid #1e3a5f;
+    border-radius: 20px;
+    color: #1e3a5f;
+    font-size: 1.5em;
+    margin: 55px auto 0;
+    padding: 18px 25px;
+    position: relative;
+    width: fit-content;
+}
+
+#speech-bubble::after {
+    background-color: white;
+    border-bottom: 3px solid #1e3a5f;
+    border-right: 3px solid #1e3a5f;
+    bottom: -14px;
+    content: "";
+    height: 22px;
+    left: 50%;
+    position: absolute;
+    transform: translateX(-50%) rotate(45deg);
+    width: 22px;
+}
+
+/* Beverage */
+.beverage-row {
+    align-items: center;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    justify-content: center;
+    margin-top: 35px;
+}
+
+.beverage-row label {
+    color: #1d4f91;
+    font-size: 1.1em;
+}
+
+#beverage-select {
+    font-size: 1em;
+    padding: 4px;
+}
+
+#beverage-message {
+    color: #c2410c;
+    font-size: 1.2em;
+    min-height: 30px;
+}
+
+/* Sticker */
+#image-container {
+    display: inline-block;
+    margin-top: 25px;
+    position: relative;
+}
+
+#sun-image {
+    cursor: pointer;
+    display: block;
+    height: 220px;
+    object-fit: contain;
+    width: 220px;
+}
+
+#sticker {
+    font-size: 2em;
+    left: -15px;
+    position: absolute;
+    top: 10px;
+}
+
+/* Reusable hiding class */
+.hidden {
+    display: none;
+}
+
+/* Footer */
+footer {
+    color: #1d4f91;
+    text-align: center;
+}
+
+/* Mobile layout */
+@media (max-width: 700px) {
+    #content {
+        margin: 0 auto;
+        padding: 18px;
+        width: 100%;
+    }
+
+    #columns {
+        display: block;
+    }
+
+    .column {
+        min-height: 250px;
+        padding: 25px 15px;
+    }
+
+    #sun-image {
+        height: 200px;
+        width: 200px;
+    }
+}

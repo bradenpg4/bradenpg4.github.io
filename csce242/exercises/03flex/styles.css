@@ -13,6 +13,43 @@ body {
     background-color: bisque;
 }
 
+#logo {
+    position:absolute;
+    left:1em;
+    top:1em;
+}
+
+/* Hero */
+#hero {
+    position:relative;
+}
+
+hero-description {
+    position: absolute;
+    top: 60%;
+    left: 5%;
+    background-color: rgba(255, 255, 255, 0.8);
+    padding: 10px;
+    font-size: 1.5em;
+}
+
+.hero-arrow{
+    position:absolute;
+    top:22%;
+    font-size: 8em;
+    color: white;
+    text-decoration: none;
+}
+
+#hero-arrow-right{
+    right: 2%;
+}
+
+#hero-arrow-left{
+    left: 2%;
+}
+
+/*Sidebar */
 #sidebar, #info {
     padding: 5px;
 }
@@ -24,8 +61,57 @@ body {
 #info {
     background-color: lightblue;
 }
+
+/*footer links*/
+
+#footer-links header{
+    position:relative;
+}
+
+#footer-social{
+    position:absolute;
+    right: 5px;
+    top: 5px;
+    list-style-type: none;
+}
+
+#footer-social li{
+    display:inline-block;
+}
+
+#footer-social a{
+   list-style-type: none;
+}
+
+#footer-links-title{
+    width:fit-content;
+    margin: auto;
+}
+
+#footer-links-title h1, #footer-links h2 {
+    margin:0;
+    padding-left:10px;
+}
+
+#footer-links {
+    background-color: maroon;
+    color: white;
+}
+
+#footer-links a{
+    color: white;
+}
+
+#footer-copy {
+    background-color: black;
+    color: white;
+}
+
+#footer-copy a{
+    color: white;
+}
 /* Navigation */
-#main-nav ul, #quick-links {
+#main-nav ul, #quick-links, #login-nav ul {
     list-style-type: none;
     padding-left: 0;
 }
@@ -36,9 +122,24 @@ body {
     border-bottom: 1px solid white;
 }
 
-#main-nav a{
+#main-nav a, #login-nav a{
     color:white;
     text-decoration: none; /* Remover underline */
+}
+
+/* login nav */
+#login-nav a {
+    color:aqua;
+    font-size:1.5em;
+}
+
+#login-nav li {
+    display:inline-block;
+}
+
+#login-nav li:not(:last-child):not(:first-child)::after {
+   content: " | ";
+   color:aqua;
 }
 
 /* images */
@@ -52,9 +153,17 @@ img{
     padding-top: 15px;
 }
 
+/* columns for all devices */
+.columns-mobile {
+    display: flex;
+}
+
 /* Responsive Design */
 
 /* 600px or larger */
+#footer-links-title{
+    margin: 0;
+}
 @media (min-width: 1000px) {
    .columns {
         display: flex;

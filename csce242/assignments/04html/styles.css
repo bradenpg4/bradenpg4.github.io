@@ -1,0 +1,403 @@
+/* Structure */
+body {
+    color: #222;
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
+img {
+    display: block;
+    max-width: 100%;
+}
+
+/* Header */
+.usc-bar {
+    align-items: center;
+    background-color: #73000a;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    min-height: 84px;
+    padding: 15px 7%;
+}
+
+.usc-logo {
+    font-family: Georgia, 'Times New Roman', serif;
+    font-size: 1.75em;
+    font-weight: bold;
+    line-height: .95;
+}
+
+.top-links {
+    display: flex;
+    font-size: .8em;
+    gap: 22px;
+}
+
+.school-bar {
+    font-family: Georgia, 'Times New Roman', serif;
+    font-size: 2.2em;
+    font-weight: bold;
+    padding: 25px 7%;
+}
+
+/* Navigation */
+nav {
+    background-color: #f4f2ef;
+    border-bottom: 1px solid #d5d1cb;
+    border-top: 1px solid #d5d1cb;
+    display: flex;
+    font-size: .86em;
+    font-weight: bold;
+    gap: 28px;
+    padding: 17px 7%;
+}
+
+nav a {
+    white-space: nowrap;
+}
+
+/* Hero */
+.main-hero {
+    min-height: 610px;
+    position: relative;
+}
+
+.main-hero > img {
+    height: 610px;
+    object-fit: cover;
+    width: 100%;
+}
+
+.hero-copy {
+    bottom: 70px;
+    color: white;
+    left: 8%;
+    max-width: 660px;
+    position: absolute;
+}
+
+h1, h2, h3 {
+    font-family: Georgia, 'Times New Roman', serif;
+    line-height: 1.1;
+}
+
+h1 {
+    font-size: 4em;
+    margin: 0 0 25px;
+}
+
+h2 {
+    font-size: 3em;
+    margin: 0 0 22px;
+}
+
+h3 {
+    font-size: 1.75em;
+    margin: 16px 0 12px;
+}
+
+.label {
+    color: #73000a;
+    font-size: .78em;
+    font-weight: bold;
+    letter-spacing: .12em;
+    margin: 0 0 12px;
+    text-transform: uppercase;
+}
+
+.white-link, .arrow-link {
+    display: inline-block;
+    font-size: .9em;
+    font-weight: bold;
+}
+
+.white-link span, .arrow-link span {
+    font-size: 1.3em;
+    margin-left: 8px;
+}
+
+.white-link {
+    border-bottom: 2px solid white;
+    color: white;
+    padding-bottom: 5px;
+}
+
+.arrow-link {
+    color: #73000a;
+    margin-top: 14px;
+}
+
+/* Content Sections */
+.split-section {
+    align-items: stretch;
+    display: flex;
+    min-height: 560px;
+}
+
+.split-section > div {
+    flex: 1;
+}
+
+.split-image img {
+    height: 100%;
+    object-fit: cover;
+    width: 100%;
+}
+
+.split-copy {
+    align-self: center;
+    max-width: 580px;
+    padding: 80px 10%;
+}
+
+.split-copy p:not(.label) {
+    font-size: 1.08em;
+    line-height: 1.7;
+}
+
+.quote {
+    background-color: #73000a;
+    color: white;
+    padding: 95px 18%;
+    text-align: center;
+}
+
+.quote blockquote {
+    font-family: Georgia, 'Times New Roman', serif;
+    font-size: 2.4em;
+    line-height: 1.28;
+    margin: 0;
+}
+
+.quote p {
+    font-size: .85em;
+    font-weight: bold;
+    margin-top: 28px;
+}
+
+/* Quick Links */
+.quick-links {
+    display: flex;
+    margin: 0 auto;
+    max-width: 1300px;
+    padding: 95px 5%;
+}
+
+.quick-links article {
+    border-left: 1px solid #d0cbc4;
+    flex: 1;
+    padding: 5px 34px 15px;
+}
+
+.quick-links article:last-child {
+    border-right: 1px solid #d0cbc4;
+}
+
+.quick-links p {
+    line-height: 1.65;
+}
+
+.quick-links a {
+    color: #73000a;
+    font-size: .88em;
+    font-weight: bold;
+}
+
+.number {
+    color: #73000a;
+    font-size: .8em;
+    font-weight: bold;
+}
+
+/* Centers */
+.centers {
+    color: white;
+    min-height: 570px;
+    position: relative;
+}
+
+.centers > img {
+    height: 570px;
+    object-fit: cover;
+    width: 100%;
+}
+
+.centers > div {
+    bottom: 75px;
+    left: 10%;
+    max-width: 500px;
+    position: absolute;
+}
+
+.centers .label {
+    color: white;
+}
+
+.centers p:not(.label) {
+    font-size: 1.08em;
+    line-height: 1.65;
+}
+
+/* Stay Connected */
+.connect {
+    margin: 0 auto;
+    max-width: 1300px;
+    padding: 100px 5%;
+    text-align: center;
+}
+
+.connect h2 {
+    margin-bottom: 55px;
+}
+
+.connect-links {
+    display: flex;
+}
+
+.connect-links a {
+    background-color: #f2efea;
+    color: #73000a;
+    flex: 1;
+    font-family: Georgia, 'Times New Roman', serif;
+    font-size: 1.5em;
+    font-weight: bold;
+    margin: 0 8px;
+    padding: 38px 22px;
+}
+
+.connect-links span {
+    display: block;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: .5em;
+    margin-bottom: 10px;
+}
+
+.connect-links b {
+    display: block;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.1em;
+    margin-top: 15px;
+}
+
+/* Footer */
+footer {
+    background-color: #252525;
+    color: white;
+    display: flex;
+    gap: 70px;
+    padding: 55px 10%;
+}
+
+footer > div:first-child {
+    flex: 2;
+}
+
+footer > div:not(:first-child) {
+    flex: 1;
+}
+
+footer p, footer a:not(.usc-logo) {
+    display: block;
+    font-size: .85em;
+    margin: 8px 0;
+}
+
+/* Responsive Design */
+@media (max-width: 850px) {
+    .top-links {
+        display: none;
+    }
+
+    .school-bar {
+        font-size: 1.7em;
+    }
+
+    nav {
+        flex-wrap: wrap;
+        gap: 12px 20px;
+    }
+
+    .main-hero, .main-hero > img {
+        min-height: 510px;
+        height: 510px;
+    }
+
+    .hero-copy {
+        bottom: 45px;
+        left: 7%;
+        right: 7%;
+    }
+
+    h1 {
+        font-size: 2.5em;
+    }
+
+    h2 {
+        font-size: 2.1em;
+    }
+
+    .split-section, .quick-links, .connect-links, footer {
+        flex-direction: column;
+    }
+
+    .research .split-image {
+        order: -1;
+    }
+
+    .split-image img {
+        height: 360px;
+    }
+
+    .split-copy {
+        padding: 58px 9%;
+    }
+
+    .quote {
+        padding: 70px 10%;
+    }
+
+    .quote blockquote {
+        font-size: 1.8em;
+    }
+
+    .quick-links {
+        gap: 0;
+        padding: 55px 7%;
+    }
+
+    .quick-links article, .quick-links article:last-child {
+        border-bottom: 1px solid #d0cbc4;
+        border-left: 0;
+        border-right: 0;
+        padding: 25px 0;
+    }
+
+    .centers > div {
+        bottom: 45px;
+        left: 8%;
+        right: 8%;
+    }
+
+    .connect {
+        padding: 65px 7%;
+    }
+
+    .connect-links a {
+        margin: 6px 0;
+    }
+
+    footer {
+        gap: 25px;
+        padding: 45px 10%;
+    }
+}
