@@ -44,7 +44,7 @@ document.getElementById("txt-missed-days").onkeyup = (e) => {
         } else if(missedDays <= 5){
             attendanceMessage.innerHTML = "Make sure you get notes and complete any work you miss.";
         } else if(missedDays <= 8){
-            attendanceMessage.innerHTML = "You are missing valuable learning opportunities.";
+            attendanceMessage.innerHTML = "You are missing valuable class time.";
         } else {
             attendanceMessage.innerHTML = "That is a lot of class to miss. Try to make attendance a priority.";
         }
