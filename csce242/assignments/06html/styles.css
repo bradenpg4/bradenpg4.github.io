@@ -1,12 +1,12 @@
 :root {
-    --background:#FAF1E8;
-    --headings:#393D3B;
-    --main-nav:#393D3B;
-    --section-bg:#FFFFFF;
-    --accent:#A64F6C;
-    --accent-light:#F7BECC;
-    --border:#C2B7AB;
-    --light-text:#FAF1E8;
+    --background: #EAF4FA;
+    --headings: #1F3A4D;
+    --main-nav: #1F3A4D;
+    --section-bg: #FFFFFF;
+    --accent: #2E7FA8;
+    --accent-light: #BFE3F2;
+    --border: #9DB8C7;
+    --light-text: #F4FBFF;
 }
 
 body {
