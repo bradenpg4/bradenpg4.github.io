@@ -519,3 +519,33 @@ footer {
         gap:30px;
     }
 }
+
+/* Toggle Navigation */
+#toggle-nav {
+    display:none;
+}
+
+/* Smaller screens */
+@media (max-width: 900px) {
+    #main-header {
+        position:relative;
+    }
+
+    #toggle-nav {
+        display:block;
+        position:absolute;
+        right:20px;
+        top:20px;
+    }
+
+    #toggle-nav div {
+        background-color:var(--headings);
+        height:3px;
+        margin:5px 0;
+        width:25px;
+    }
+
+    #main-nav ul.hide-small {
+        display:none;
+    }
+}
