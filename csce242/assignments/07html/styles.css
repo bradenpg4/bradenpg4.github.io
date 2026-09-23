@@ -1,0 +1,90 @@
+/* Structure */
+:root {
+    --grass: #7fc84c;
+    --road: #333333;
+    --line: #f8d84a;
+    --wheel: #555555;
+    --window: #9bd3f5;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    margin:0;
+    padding:0;
+}
+
+#content {
+    width:90%;
+    margin:auto;
+}
+
+/* Header */
+#main-header h1 {
+    font-size:2em;
+}
+
+/* Road CSS art (used chat to help me make it)*/
+#road {
+    height:300px;
+    background-color:var(--grass);
+    position:relative;
+}
+
+#street {
+    position:absolute;
+    top:70px;
+    width:100%;
+    height:140px;
+    background-color:var(--road);
+    border-top:5px solid white;
+    border-bottom:5px solid white;
+}
+
+#street::after {
+    content:"";
+    position:absolute;
+    top:65px;
+    width:100%;
+    height:6px;
+    background:repeating-linear-gradient(
+        to right,
+        var(--line) 0 52px,
+        transparent 52px 92px
+    );
+}
+
+/* Cars (used chat to help me)*/
+.car {
+    position:absolute;
+    width:90px;
+    height:42px;
+    border-radius:10px;
+    z-index:1;
+}
+
+.window {
+    position:absolute;
+    width:45px;
+    height:20px;
+    background-color:var(--window);
+    border-radius:8px 8px 2px 2px;
+    top:-12px;
+    left:22px;
+}
+
+.wheel {
+    position:absolute;
+    width:17px;
+    height:17px;
+    background-color:var(--wheel);
+    border-radius:50%;
+    bottom:-8px;
+}
+
+.front-wheel {
+    left:10px;
+}
+
+.back-wheel {
+    right:10px;
+}
