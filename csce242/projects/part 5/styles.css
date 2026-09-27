@@ -645,6 +645,160 @@ img {
     max-width:650px;
 }
 
+/* Services Hero */
+.services-hero {
+    background-color:var(--red);
+    color:var(--light-text);
+    padding:70px 0;
+}
+
+.services-hero .content {
+    align-items:center;
+    gap:85px;
+    max-width:1050px;
+}
+
+.services-hero .content > div {
+    flex:1;
+}
+
+.services-hero h2 {
+    color:var(--light-text);
+    font-size:3em;
+    line-height:1.08;
+}
+
+.services-hero p:not(.eyebrow) {
+    font-size:1.05em;
+    font-weight:bold;
+    line-height:1.45;
+    max-width:430px;
+}
+
+.services-hero img {
+    border-radius:18px;
+    width:46%;
+}
+
+/* Service Features */
+.service-feature {
+    padding:75px 0;
+}
+
+.service-feature .content {
+    align-items:center;
+    gap:100px;
+    max-width:1050px;
+}
+
+.service-feature .content > div {
+    flex:1;
+}
+
+.service-feature h2 {
+    font-size:2.5em;
+    line-height:1.08;
+}
+
+.service-feature p:not(.eyebrow) {
+    font-size:1.05em;
+    font-weight:bold;
+    line-height:1.45;
+}
+
+.service-feature img {
+    border-radius:18px;
+    width:47%;
+}
+
+.improvement-feature {
+    background-color:var(--red);
+}
+
+.improvement-feature .content > div {
+    text-align:center;
+}
+
+/* Leadership Section */
+.leadership-feature {
+    padding:75px 0;
+    text-align:center;
+}
+
+.leadership-feature > .content > p:not(.eyebrow) {
+    font-size:1.05em;
+    font-weight:bold;
+    margin:0 auto 30px;
+    max-width:620px;
+}
+
+.leadership-feature h2 {
+    font-size:2.5em;
+    line-height:1.08;
+    margin:15px auto;
+    max-width:700px;
+}
+
+.leadership-image {
+    margin:auto;
+    max-width:950px;
+    position:relative;
+}
+
+.leadership-image > img {
+    border-radius:18px;
+    height:320px;
+    object-fit:cover;
+    width:100%;
+}
+
+.leadership-cards {
+    bottom:25px;
+    gap:15px;
+    left:20px;
+    position:absolute;
+    right:20px;
+}
+
+.leadership-cards article {
+    background-color:var(--cards);
+    border-radius:12px;
+    flex:1;
+    padding:20px 15px;
+}
+
+.leadership-cards h3 {
+    font-size:1.15em;
+    margin-bottom:10px;
+}
+
+.leadership-cards p {
+    font-size:.9em;
+    font-weight:bold;
+    line-height:1.4;
+    margin:0;
+}
+
+/* Services Callout */
+.services-callout {
+    background-color:var(--footer);
+    color:var(--light-text);
+    padding:70px 0;
+    text-align:center;
+}
+
+.services-callout h2 {
+    color:var(--light-text);
+    font-size:2.4em;
+}
+
+.services-callout p {
+    font-size:1em;
+    font-weight:bold;
+    margin:auto;
+    max-width:600px;
+}
+
 /* Footer */
 footer {
     background-color:var(--footer);
@@ -769,7 +923,9 @@ footer {
     .founder-biography .content,
     .partner-section .content,
     .methodology-hero .content,
-    .methodology-step .content {
+    .methodology-step .content,
+    .services-hero .content,
+    .service-feature .content {
         gap:35px;
     }
 
@@ -780,7 +936,9 @@ footer {
     .founder-biography img,
     .partner-section img,
     .methodology-hero img,
-    .methodology-step img {
+    .methodology-step img, 
+    .services-hero img,
+    .service-feature img {
         width: 100%;
     }
 
@@ -810,6 +968,14 @@ footer {
         gap:30px;
         text-align:center;
     }
+
+    .leadership-cards {
+    bottom:auto;
+    left:auto;
+    margin-top:20px;
+    position:static;
+    right:auto;
+}
 }
 
 @media (max-width:600px) {
