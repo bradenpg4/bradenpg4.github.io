@@ -1179,6 +1179,85 @@ img {
     max-width:600px;
 }
 
+/* Contact Page */
+.contact-hero {
+    background-color:var(--red);
+    color:var(--light-text);
+    padding:80px 0;
+    text-align:center;
+}
+
+.contact-hero h2 {
+    color:var(--light-text);
+    font-size:3em;
+    line-height:1.08;
+    margin:20px auto;
+    max-width:750px;
+}
+
+.contact-hero p:not(.eyebrow) {
+    font-size:1.1em;
+    font-weight:bold;
+    margin:auto;
+    max-width:650px;
+}
+
+.contact-section {
+    padding:80px 0;
+}
+
+.contact-section .content {
+    align-items:flex-start;
+    gap:90px;
+    max-width:1000px;
+}
+
+.contact-details {
+    flex:1;
+}
+
+.contact-details h2 {
+    font-size:2.6em;
+}
+
+.contact-details h3 {
+    margin-bottom:5px;
+    margin-top:35px;
+}
+
+.contact-details a {
+    color:var(--red);
+    font-weight:bold;
+}
+
+.contact-form {
+    background-color:var(--cards);
+    border-radius:14px;
+    flex:1;
+    padding:35px;
+}
+
+.contact-form label {
+    display:block;
+    font-weight:bold;
+    margin:15px 0 7px;
+}
+
+.contact-form input,
+.contact-form textarea {
+    border:1px solid var(--gray);
+    border-radius:6px;
+    font-family:Arial, Helvetica, sans-serif;
+    padding:12px;
+    width:100%;
+}
+
+.contact-form button {
+    border:0;
+    font-size:1em;
+    margin-top:25px;
+}
+
 /* Footer */
 footer {
     background-color:var(--footer);
@@ -1306,7 +1385,8 @@ footer {
     .methodology-step .content,
     .services-hero .content,
     .service-feature .content,
-    .featured-insight .content {
+    .featured-insight .content,
+    .contact-section .content {
         gap:35px;
     }
 
