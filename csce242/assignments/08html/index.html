@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Destination Explorer</title>
+        <link rel="stylesheet" href="styles.css">
+    </head>
+
+    <body>
+        <div id="content">
+            <header id="main-header">
+                <h1>Destination Explorer</h1>
+                <h2>Mountains and Beaches</h2>
+            </header>
+
+            <main>
+                <section id="destination-section">
+                    <label for="destination-type">
+                        Pick Your Destination Type
+                    </label>
+
+                    <select id="destination-type">
+                        <option value="">Select</option>
+                        <option value="mountains">Mountains</option>
+                        <option value="beaches">Beaches</option>
+                    </select>
+
+                    <div id="destination-links"></div>
+
+                    <div id="map-container" class="hidden"></div>
+                </section>
+            </main>
+
+            <footer>
+                <p>&copy; Braden Green</p>
+            </footer>
+        </div>
+
+        <script src="scripts/index.js"></script>
+    </body>
+</html>
