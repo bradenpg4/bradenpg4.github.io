@@ -799,6 +799,140 @@ img {
     max-width:600px;
 }
 
+/* Strategic Planning Preview Page */
+.strategic-hero {
+    background-image:
+        linear-gradient(rgba(148, 28, 45, .88),
+                        rgba(148, 28, 45, .88)),
+        url("images/image-004.jpg");
+    background-position:center;
+    background-size:cover;
+    color:var(--light-text);
+    padding:95px 0;
+    text-align:center;
+}
+
+.strategic-hero h2 {
+    color:var(--light-text);
+    font-size:3em;
+    line-height:1.08;
+    margin:20px auto;
+    max-width:750px;
+}
+
+.strategic-hero p:not(.eyebrow) {
+    font-size:1.1em;
+    font-weight:bold;
+    margin:auto;
+    max-width:700px;
+}
+
+/* Planning Help Cards */
+.planning-help {
+    padding:80px 0;
+    text-align:center;
+}
+
+.planning-help h2 {
+    font-size:2.7em;
+    line-height:1.08;
+    margin:15px auto 40px;
+    max-width:650px;
+}
+
+.planning-cards {
+    flex-wrap:wrap;
+    gap:25px;
+    margin:auto;
+    max-width:800px;
+}
+
+.planning-cards article {
+    background-color:var(--cards);
+    border-radius:14px;
+    flex-basis:47%;
+    padding:25px 20px;
+}
+
+.planning-cards h3 {
+    font-size:1.25em;
+    margin-bottom:10px;
+}
+
+.planning-cards p {
+    font-size:.95em;
+    font-weight:bold;
+    line-height:1.4;
+    margin:0;
+}
+
+/* Planning Process */
+.planning-process {
+    background-color:var(--footer);
+    color:var(--light-text);
+    padding:80px 0;
+    text-align:center;
+}
+
+.planning-process h2 {
+    color:var(--light-text);
+    font-size:2.7em;
+    margin:15px auto 50px;
+}
+
+.planning-steps {
+    margin:auto;
+    max-width:900px;
+    position:relative;
+}
+
+.planning-steps::before {
+    background-color:var(--gold);
+    content:"";
+    height:4px;
+    left:16%;
+    position:absolute;
+    right:16%;
+    top:38px;
+}
+
+.planning-steps article {
+    flex:1;
+    position:relative;
+}
+
+.planning-steps h3 {
+    font-size:1.3em;
+}
+
+.planning-steps p:last-child {
+    font-size:.95em;
+    font-weight:bold;
+    line-height:1.4;
+    margin:auto;
+    max-width:220px;
+}
+
+/* Planning Callout */
+.planning-callout {
+    background-color:var(--red);
+    color:var(--light-text);
+    padding:75px 0;
+    text-align:center;
+}
+
+.planning-callout h2 {
+    color:var(--light-text);
+    font-size:2.6em;
+}
+
+.planning-callout p {
+    font-size:1em;
+    font-weight:bold;
+    margin:auto;
+    max-width:650px;
+}
+
 /* Footer */
 footer {
     background-color:var(--footer);
@@ -1015,4 +1149,20 @@ footer {
     .steps {
         gap:30px;
     }
+
+    .planning-cards {
+    flex-direction:column;
+}
+
+.planning-cards article {
+    flex-basis:auto;
+}
+
+.planning-steps::before {
+    display:none;
+}
+
+.planning-steps {
+    gap:30px;
+}
 }
