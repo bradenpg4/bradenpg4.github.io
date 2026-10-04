@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Vacation Experiences</title>
+        <link rel="stylesheet" href="styles.css">
+    </head>
+
+    <body>
+        <div id="content">
+            <header id="main-header">
+                <h1>Vacation Experiences</h1>
+            </header>
+
+            <main>
+                <h2 id="page-title">Choose Your Vacation</h2>
+
+                <div class="projects vacations"></div>
+            </main>
+        </div>
+
+        <div id="vacation-modal" class="hidden">
+            <section class="modal-content">
+                <button id="close-modal">&times;</button>
+
+                <iframe id="vacation-map"
+                    title="Vacation map"
+                    loading="lazy">
+                </iframe>
+
+                <div class="modal-info">
+                    <h2 id="modal-title"></h2>
+                    <p id="modal-type"></p>
+
+                    <h3>Description</h3>
+                    <p id="modal-description"></p>
+
+                    <h3>Things To Do</h3>
+                    <p id="modal-things"></p>
+                </div>
+            </section>
+        </div>
+
+        <script src="scripts/classes.js"></script>
+    </body>
+</html>
