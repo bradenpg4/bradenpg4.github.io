@@ -17,10 +17,10 @@ class Vacation {
     section.append(this.vacationType());
     section.append(this.vacationImage());
 
-    section.querySelector("a").onclick = (event) => {
-        event.preventDefault();
-        this.showModal();
-    };
+   section.onclick = (event) => {
+    event.preventDefault();
+    this.showModal();
+};
 
     return section;
 }
