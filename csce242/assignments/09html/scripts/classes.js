@@ -8,22 +8,22 @@ class Vacation {
         this.mapSrc = mapSrc;
     }
 
-    get card() {
-        const section = document.createElement("section");
-        section.classList.add("vacation");
-        section.classList.add("project-card");
+   get card() {
+    const section = document.createElement("section");
+    section.classList.add("vacation");
+    section.classList.add("project-card");
 
-        section.append(this.vacationName());
-        section.append(this.vacationImage());
-        section.append(this.vacationType());
+    section.append(this.vacationName());
+    section.append(this.vacationType());
+    section.append(this.vacationImage());
 
-        section.querySelector("a").onclick = (event) => {
-            event.preventDefault();
-            this.showModal();
-        };
+    section.querySelector("a").onclick = (event) => {
+        event.preventDefault();
+        this.showModal();
+    };
 
-        return section;
-    }
+    return section;
+}
 
     vacationName() {
         const h3 = document.createElement("h3");
@@ -38,7 +38,7 @@ class Vacation {
 
     vacationImage() {
         const img = document.createElement("img");
-        img.src = `images/classes/${this.pic}`;
+        img.src = `images/${this.pic}`;
         img.alt = `Picture of ${this.title}`;
 
         return img;
@@ -73,7 +73,7 @@ vacations.push(new Vacation(
     "Mountain",
     "A creative Blue Ridge city known for art, food, and mountain views.",
     "Visit the Biltmore Estate, drive the Blue Ridge Parkway, and explore local shops.",
-    "asheville.jpg",
+    "asheville.png",
     "https://www.google.com/maps?q=Asheville%2C%20NC&output=embed"
 ));
 
@@ -118,8 +118,26 @@ vacations.push(new Vacation(
     "Beach",
     "A relaxed beach town with wide sandy shores and sunsets.",
     "Walk the beach, kayak through marshes, and visit Brookgreen Gardens.",
-    "pawleys-island.jpg",
+    "pawleys-island.png",
     "https://www.google.com/maps?q=Pawleys%20Island%2C%20SC&output=embed"
+));
+
+vacations.push(new Vacation(
+    "Sunset Beach",
+    "Beach",
+    "A quiet North Carolina beach known for its beautiful sunsets and calm shoreline.",
+    "Walk the pier, relax on the beach, and visit Bird Island.",
+    "sunset-beach.jpg",
+    "https://www.google.com/maps?q=Sunset%20Beach%2C%20NC&output=embed"
+));
+
+vacations.push(new Vacation(
+    "Oak Island",
+    "Beach",
+    "A family-friendly beach destination with wide shores and coastal activities.",
+    "Visit Oak Island Lighthouse, go fishing, and explore the beach.",
+    "oak-island.jpg",
+    "https://www.google.com/maps?q=Oak%20Island%2C%20NC&output=embed"
 ));
 
 const vacationsDiv = document.querySelector(".vacations");

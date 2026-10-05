@@ -1,141 +1,102 @@
-/* Structure */
 :root {
-    --background:#FAF1E8;
-    --headings: #393D3B;
-    --header: #FAF1E8;
-    --footer: #393D3B;
-    --main-nav: #393D3B;
-    --hero: #C2CFC7;
-    --highlight-bg:#F7BECC;
-    --highlight-fg:  #393D3B;
-    --cards-bg:#FAF1E8;
-    --cards-border:#C2B7AB;
-    --muted-details:#C2B7AB;
-    --light-text: #FAF1E8;
-    --footer-copy-bg: #C2B7AB;
-    --accent-text:#A64F6C;
-    --donation:0%;
+    --background: #f5f2eb;
+    --heading: #214a58;
+    --subheading: #d96c73;
+    --card-header: #294d86;
+    --card-background: #ffffff;
+    --modal-background: #e7f0ff;
+    --accent: #d96c73;
+    --text: #303b42;
+}
+
+* {
+    box-sizing: border-box;
 }
 
 body {
+    margin: 0;
+    background-color: var(--background);
+    color: var(--text);
     font-family: Arial, Helvetica, sans-serif;
-    background-color: var(--background);
-    padding:0px;
-    margin:0px;
 }
 
-/* Header */
+#content {
+    width: 90%;
+    max-width: 1300px;
+    margin: 30px auto;
+}
+
+/* Heading */
 #main-header {
-    background-color: var(--background);
-    position: relative;
-}
-
-/* Navigation */
-#main-nav ul {
-    list-style-type: none;
-    padding-left:0;
-    margin:0;
-}
-
-#main-nav li {
-    background-color: var(--main-nav);
-    padding:16px 5px;
-    border-bottom: 1px solid var(--light-text);
     text-align: center;
-    font-size:20px;
 }
 
-#main-nav a {
-    color: var(--highlight-bg);
-    text-decoration: none;
+#main-header h1 {
+    margin: 0;
+    padding: 15px 0;
+    color: var(--heading);
+    font-size: 2.4em;
+    font-weight: normal;
 }
 
-#main-nav a:hover {
-    color:var(--highlight-bg);
-}
-
-/* Page Title */
 #page-title {
-    color: var(--headings);
-    margin: 22px 0 12px;
-    padding: 8px 0 8px 14px;
-    border-left: 6px solid var(--accent-text);
-    font-size: 1.7em;
+    margin: 15px 0 25px;
+    color: var(--subheading);
+    text-align: center;
+    font-size: 1.8em;
+    font-weight: normal;
 }
 
-/* Projects */
+/* Vacation Cards */
 .projects {
     display: grid;
     grid-template-columns: 1fr;
-    padding:15px;
+    gap: 20px;
 }
 
 .project-card {
-    background: var(--cards-bg);
-    border: 2px solid var(--cards-border);
-    box-shadow: 4px 4px 0 var(--cards-border);
-    margin-bottom:18px;
-    position:relative;
+    overflow: hidden;
+    cursor: pointer;
+    background-color: var(--card-background);
+    border-radius: 10px;
+    box-shadow: 0 3px 8px rgb(0 0 0 / 18%);
+    transition: transform 0.2s;
+}
+
+.project-card:hover {
+    transform: translateY(-5px);
 }
 
 .project-card h3 {
     margin: 0;
-    padding: 12px 16px;
-    background: var(--hero);
-    color: var(--headings);
+    padding: 16px 10px 8px;
+    background-color: var(--card-header);
     text-align: center;
 }
 
-.project-card p {
-    margin: 0;
-    padding: 18px;
-}
-
-/* Images */
-img {
-    max-width:100%;
-}
-
-/* Typography */
-#main-header h1 {
-    text-align: center;
-    padding:70px 0 20px;
-    margin:0;
-}
-
-h1, h2, h3 {
-    color:var(--headings);
-}
-
-/* Hiding */
-.hidden {
-    display:none;
-}
-
-/* Vacation Cards */
 .vacation h3 a {
-    color: var(--headings);
+    color: white;
     text-decoration: none;
+    font-size: 1.4em;
+    font-weight: normal;
 }
 
-.vacation h3 a:hover {
-    color: var(--accent-text);
+.vacation-type {
+    margin: 0;
+    padding: 4px 10px 16px;
+    color: white;
+    background-color: var(--card-header);
+    text-align: center;
 }
 
 .vacation img {
     display: block;
     width: 100%;
-    height: 210px;
+    height: 230px;
     object-fit: cover;
 }
 
-.vacation-type {
-    color: var(--accent-text);
-    font-weight: bold;
-    text-align: center;
-}
-
-/* Vacation Modal */
+/* Modal */
 #vacation-modal {
     position: fixed;
     z-index: 5;
@@ -144,74 +105,76 @@ h1, h2, h3 {
     width: 100%;
     height: 100%;
     padding: 20px;
-    background-color: rgb(0 0 0 / 60%);
+    background-color: rgb(0 0 0 / 55%);
+}
+
+.hidden {
+    display: none;
 }
 
 .modal-content {
     display: grid;
     grid-template-columns: 1fr;
-    gap: 20px;
+    gap: 25px;
     position: relative;
-    width: min(850px, 100%);
+    width: min(900px, 100%);
     max-height: 90vh;
-    overflow: auto;
+    overflow-y: auto;
     margin: 5vh auto;
     padding: 35px 25px 25px;
-    background-color: var(--background);
-    border: 3px solid var(--cards-border);
-    box-shadow: 5px 5px 0 var(--cards-border);
+    background-color: var(--modal-background);
 }
 
 #close-modal {
     position: absolute;
     top: 5px;
-    right: 12px;
-    color: var(--accent-text);
+    right: 14px;
+    padding: 0;
+    color: var(--card-header);
     cursor: pointer;
     background: none;
     border: 0;
-    font-size: 35px;
+    font-size: 32px;
 }
 
 #vacation-map {
     width: 100%;
-    min-height: 280px;
+    min-height: 300px;
     border: 0;
 }
 
 .modal-info h2 {
-    margin-top: 0;
+    margin: 0;
+    color: var(--card-header);
+    font-size: 2em;
+    font-weight: normal;
 }
 
 #modal-type {
-    color: var(--accent-text);
+    color: var(--subheading);
     font-weight: bold;
 }
 
 .modal-info h3 {
-    margin-bottom: 5px;
+    margin: 22px 0 5px;
+    color: var(--card-header);
 }
 
 .modal-info p {
     line-height: 1.5;
 }
 
-/* Responsive Design */
-@media (min-width: 1000px) {
-    #content {
-        width:80%;
-        margin:auto;
-    }
-
+/* Tablet */
+@media (min-width: 650px) {
     .projects {
-        grid-template-columns: repeat(3, 1fr);
-        gap: 18px;
-        padding: 20px 0 40px;
+        grid-template-columns: repeat(2, 1fr);
     }
+}
 
-    .project-card {
-        margin-bottom:0;
-        min-height:200px;
+/* Desktop */
+@media (min-width: 1000px) {
+    .projects {
+        grid-template-columns: repeat(4, 1fr);
     }
 
     .modal-content {
