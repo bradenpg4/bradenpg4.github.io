@@ -1,0 +1,74 @@
+[
+  {
+    "_id": 1,
+    "title":"Strategic Planning",
+    "category":"Strategy",
+    "duration":"4-8 weeks",
+    "audience":"Business owners and leadership teams",
+    "description":"Create a focused plan that connects goals, priorities, and practical next steps.",
+    "img":"images/image-008.jpg"
+  },
+  {
+    "_id": 2,
+    "title":"Organizational Improvement",
+    "category":"Operations",
+    "duration":"6-10 weeks",
+    "audience":"Organizations improving internal systems",
+    "description":"Identify process challenges and improve the systems that support your team.",
+    "img":"images/image-012.jpg"
+  },
+  {
+    "_id": 3,
+    "title":"Leadership Development",
+    "category":"Leadership",
+    "duration":"Ongoing support",
+    "audience":"New and experienced leaders",
+    "description":"Build confidence, communication, and decision-making skills for leaders.",
+    "img":"images/image-010.jpg"
+  },
+  {
+    "_id": 4,
+    "title":"Team Alignment",
+    "category":"Teams",
+    "duration":"3-6 weeks",
+    "audience":"Teams needing stronger collaboration",
+    "description":"Help teams establish shared priorities, responsibilities, and ways of working.",
+    "img":"images/image-014.jpg"
+  },
+  {
+    "_id": 5,
+    "title":"Process Review",
+    "category":"Operations",
+    "duration":"2-4 weeks",
+    "audience":"Teams with inefficient workflows",
+    "description":"Review workflows to locate bottlenecks and opportunities for improvement.",
+    "img":"images/image-006.jpg"
+  },
+  {
+    "_id": 6,
+    "title":"Goal Setting Workshops",
+    "category":"Strategy",
+    "duration":"1-2 sessions",
+    "audience":"Leadership teams",
+    "description":"Bring leadership teams together to define meaningful and measurable goals.",
+    "img":"images/image-004.jpg"
+  },
+  {
+    "_id": 7,
+    "title":"Change Management Support",
+    "category":"Leadership",
+    "duration":"Based on your needs",
+    "audience":"Organizations navigating change",
+    "description":"Guide leaders and teams through organizational change with clarity and care.",
+    "img":"images/image-002.jpg"
+  },
+  {
+    "_id": 8,
+    "title":"Progress Measurement",
+    "category":"Performance",
+    "duration":"2-5 weeks",
+    "audience":"Organizations measuring results",
+    "description":"Create simple ways to track results, accountability, and meaningful progress.",
+    "img":"images/image-016.jpg"
+  }
+]
